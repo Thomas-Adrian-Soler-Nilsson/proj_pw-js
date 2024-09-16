@@ -1,0 +1,16 @@
+* {
+    text-align: center;
+    background-color: blueviolet;
+ }
+ #fonte {
+    font-size: xx-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    
+ }
+ table {
+    border: solid 1 black;
+    
+ }
+ td, th{
+    border: 1px solid red;
+ }
