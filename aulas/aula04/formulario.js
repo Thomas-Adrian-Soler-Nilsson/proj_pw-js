@@ -4,17 +4,17 @@ function adicionarLinha(){
     //Entrada de valores do formulário
     const nome = document.getElementById("nome").value;
     const idade = document.getElementById("idade").value;
-    const admissao = document.getElementById("adimissao").value;
+    const admissao = document.getElementById("admissao").value;
     const demissao = document.getElementById("demissao").value;
 
     //Se for preenchido vazio
     if(nome === '' || idade === '' || admissao === '')
         alert("Preencha os valores do formulário!")
-}
-//Cria uma linha na tabela se não existir
+    else {
+        //Cria uma linha na tabela se não existir
 const tabela = document.getElementById("tabelaDados") .getElementsByTagName('tbody') [0];
 //Inserindo uma nova linha
-const novalinha = tabela.insertRow;
+const novalinha = tabela.insertRow();
 
 //Inserindo os valores da linha
 const celId = novalinha.insertCell(0);
@@ -33,7 +33,9 @@ celDemissao.innerHTML = demissao;
 proximoId++
 
 //Limpar formulário 
-document.getElementById("linhaForm").request();
+document.getElementById("linhaForm").reset();
+    }
+}
 
 
 
