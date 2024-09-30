@@ -1,0 +1,48 @@
+<html lang="pt-br"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="formulario.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap');
+        </style>
+</head>
+<body> 
+    <nav>   
+         <h1>Vendas</h1>
+    </nav>
+    <hr>
+    <form id="linhaForm">
+        <input type="number" name="id" id="id" placeholder="Digite id" required>
+        <br><br>
+        <input type="text" name="produto" id="produto" placeholder="Digite o nome do Produto" required>
+        <br><br>
+        <input type="text" name="marca" id="marca" placeholder="Digite a marca do Produto" required>
+        <br><br>
+        <input type="text" name="segmento" id="segmento" placeholder="Digite o segmento do Produto " required>
+        <br><br>
+        <input type="number" name="valor" id="valor" placeholder="Digite o valor do Produto " required>
+        <br><br>
+        <label for="datavenda">Data da venda</label>
+        <input type="date" name="datavenda" id="datavenda" required>
+        <br><br>
+        <button type="button" onclick="adicionarLinha()">Adicionar</button>
+    </form>
+    <br><br>
+    <table id="tabelaDados">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Produto</th>
+                <th>Marca</th>
+                <th>Segmaento</th>
+                <th>Valor</th> 
+                <th>Data da venda</th> 
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</body>
+</html>

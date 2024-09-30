@@ -1,0 +1,55 @@
+html, body{
+    margin: 0%;
+    padding: 0%;
+}
+nav{
+    background-color: rgb(4, 23, 49); 
+    padding: 10px;
+    color: white;
+    font-size: x-large;
+    font-family: Sixtyfour Convergence
+
+    ;
+}
+form{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    padding: 10px;
+}
+input,label{
+    padding-bottom: 5px;
+    padding-top: 5px;
+    margin: 5px;
+}
+input{
+    width: 20%;
+}
+table{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+}
+td,th{
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){
+    background-color: #ddd;
+}
+th{
+    color: rgb(255, 3, 58);
+}
+tr:nth-child(even){
+    background-color: #f2f2f2
+}
+tr:nth-child(odd){
+    background-color: #f2f2f2;
+}
+button:hover{
+    background-color: rgba(255, 3, 58, 0.644);
+}
+
+  
