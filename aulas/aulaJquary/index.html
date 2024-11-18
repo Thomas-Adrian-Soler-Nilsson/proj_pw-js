@@ -10,7 +10,7 @@
     <script>
         $(document).ready(function(){
             $("#hide").click(function(){
-                $("p").hide();
+                $(".objeto").hide();
             });
             $("#show").click(function(){
                 $("p").show();
@@ -19,8 +19,9 @@
     </script>
 </head>
 <body>
-    <p>Esse texto está sendo mostrado. Esconda!</p>
+    <p class="objeto">Esse texto está sendo mostrado. Esconda!</p>
     <button type="button" class="btn btn-danger" id="hide">Esconda</button>
     <button type="button" class="btn btn-primary" id="show">Mostrar</button>
+    <p>Esse texto também</p>
 </body>
 </html>
