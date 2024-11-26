@@ -45,16 +45,15 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         $(document).ready(function () {
-            $('#form-add-row').on('submit', function(evet) {
+            $('#form-add-row').on('submit', function (event) {
                 event.preventDefault();
-                var nome = $('#name--
-                ').val();
-                var newRow = $('<tr class="rew-row"><td>' + nome + '</td></tr>');
-                $('#tabela tbody').append(newRow) 
-                newRow.hide().fadeOn(1000, Function () {
-                        $(this).removeClass('new-row');
-                });
-                $('#nome').val(' ');
+                var nome = $('#nome').val();
+                var newRow = $('<tr class="new-row"><td>' + nome + '</td></tr>');
+                $('#tabela tbody').append(newRow);
+                newRow.hide().fadeIn(1000, function () {
+                    $(this).removeClass('new-row');
+                })
+                $('#nome').val('');
             });
         });
     </script>
